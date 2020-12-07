@@ -4,6 +4,7 @@ const double Ts = 0.1; //okres próbkowania
 const double A = 2; //amplituda
 #define samples 10 //ilość próbek
 
+//całka numeryczna metodą prostokątów
 void integral(double* signal, double* ret){
   for (int i = 0; i < samples; i++)
     ret[i] = signal[i] * Ts;  
