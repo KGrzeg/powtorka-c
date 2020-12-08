@@ -8,7 +8,7 @@ struct Wynik {
 };
 
 struct Wynik angles(double angle){
-  angle = (angle / 360) * M_PI_2; //zamiana stopni na radiany
+  angle = (angle / 180) * M_PI; //zamiana stopni na radiany
 
   struct Wynik ret;
   ret.sin = sin(angle);
